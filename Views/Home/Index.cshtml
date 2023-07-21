@@ -1,0 +1,188 @@
+﻿@model Interesse
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<head>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<style>
+</style>
+
+
+
+<div class="container"  id="inicio">
+    <div class="text-center mb-5" >
+        <h1>Seja bem vindo a Marpes Solar</h1>
+        <h3>Soluções em energia gratuita</h3>
+    </div>
+    <div class="text-center" >
+        <h1>Seja bem vindo a Marpes Solar</h1>
+        <h3>Soluções em energia gratuita</h3>
+    </div>
+
+    <div class="row mt-5 mb-5 yellowBox">
+        <div class="col-6 d-flex text-center align-items-center">
+            <div class="boxContainer" style="height: 320px;" onclick="mostrarmodal('modal1')">
+                <div style="margin: 30px;">
+                    <h4>Já imaginou parar de pagar sua conta de luz?</h4>
+                    <p>Nossa empresa presa em manter a maior qualidade do nosso produto
+                        por um preço acessivel para todos. Por que ao invés de pagar sua 
+                        conta de luz mensalmente, você não começa a investir no seu futuro?
+                    </p>
+                </div>          
+            </div> 
+        </div>
+        <div class="col-6 d-flex text-center align-items-center justify-content-center">
+            <div class="imgContainer">
+                <div class="row">
+                    <img style="margin: 5px;" src="~/imgSolar.jpg" alt="imagem energia solar" width="200px">
+                    <img style="margin: 5px;" src="~/imgSolar3.jpg" alt="imagem energia solar" width="200px">
+                </div>
+                <div class="row">
+                    <img style="margin: 5px;" src="~/imgSolar2.jpg" alt="imagem energia solar 2" width="200px">
+                    <img style="margin: 5px;" src="~/imgSolar4.jpg" alt="imagem energia solar 2" width="200px">
+                </div>
+            </div>
+        </div>
+    </div>
+
+@* MODALs *@
+
+    <div class="modal" tabindex="-1" id="modal1">
+    <div class=" modal-dialog">
+        <div class="modal-content modalContent">
+        <div class="modal-body">
+            <h5 class="modal-title">Já imaginou parar de pagar sua conta de luz?</h5>
+            <p>Nossa empresa presa em manter a maior qualidade do nosso produto
+            por um preço acessivel para todos. Por que ao invés de pagar sua 
+            conta de luz mensalmente, você não começa a investir no seu futuro?
+            </p>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="modal" tabindex="-1" id="modal2">
+        <div class=" modal-dialog">
+            <div class="modal-content modalContent">
+            <div class="modal-body">
+                <h5 class="modal-title">Por que energia solar?</h5>
+                <p>
+                    <br><br>
+                    A energia solar é uma escolha poderosa e revolucionária para suprir nossas necessidades energéticas. Essa fonte limpa e renovável possui vantagens cruciais para um futuro sustentável.
+                    <br><br>
+                    A sustentabilidade ambiental é uma das principais razões para optar pela energia solar, pois ela não emite gases de efeito estufa ou poluentes prejudiciais. Além disso, o sol é uma fonte inesgotável de energia, presente diariamente em todo o planeta.
+                    <br><br>
+                    A economia de energia é outra vantagem, já que a instalação de um sistema solar pode reduzir significativamente as contas de eletricidade. Isso diminui a dependência de fontes tradicionais de energia e os aumentos constantes nos custos.
+                    <br><br>
+                    A autonomia energética é assegurada pela energia solar, especialmente em áreas remotas ou vulneráveis a interrupções de energia. Isso contribui para maior segurança energética durante emergências e desastres naturais.
+                </p>
+                <img src="~/microInversores.jpeg" alt="microinversores" width="300px">
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="modal" tabindex="-1" id="modal3">
+        <div class=" modal-dialog">
+            <div class="modal-content modalContent">
+            <div class="modal-body">
+                <h5 class="modal-title">Por que escolher nossa empresa?</h5>
+                <p>
+                    <br><br>
+                    Nossa empresa é a escolha certa para suas necessidades energéticas sustentáveis e eficientes. Com vasta experiência no mercado de energia solar, nossa equipe é composta por especialistas altamente qualificados. Trabalhamos apenas com os melhores fabricantes de placas solares, garantindo produtos de alta qualidade e desempenho comprovado.
+                    <br><br>
+                    Oferecemos soluções personalizadas, projetadas para atender às suas demandas específicas. Desde o início do projeto até a pós-instalação, nosso suporte técnico especializado estará ao seu lado, proporcionando orientação e garantindo a eficiência do seu sistema solar.
+                    <br><br>
+                    Investir em energia solar pode gerar economia significativa nas contas de energia ao longo do tempo, e nossa empresa pode orientá-lo sobre incentivos fiscais e programas governamentais disponíveis. Além disso, ao optar por energia solar, você estará contribuindo para um futuro mais limpo e sustentável.
+                    <br><br>
+                </p>
+                <img src="~/microInversores.jpeg" alt="microinversores" width="300px">
+            </div>
+            </div>
+        </div>
+        </div>
+
+
+    <div class="row mt-5">
+        <div class="boxContainer" onclick="mostrarmodal('modal2')">
+            <div class="text-center" style="margin: 30px;">
+                <h2>Por que energia solar?</h2>
+                <p class="texto">
+                A energia solar é uma opção ambientalmente amigável, reduzindo as emissões de gases de efeito estufa e preservando os recursos naturais. Além disso, ao optar pela energia solar, você pode economizar nas contas de energia, aproveitar incentivos governamentais e programas de financiamento. A valorização do imóvel e a independência energética também são benefícios notáveis. Os sistemas solares são duráveis, de baixa manutenção e oferecem uma fonte de energia confiável e estável. Faça a escolha inteligente para um futuro sustentável e descubra o potencial da energia solar em nosso site.
+                </p>
+            </div> 
+        </div>
+    </div>
+
+
+    
+
+    <div id="contato" class="row mt-5 mb-5">
+        <div class="col-6 text-center">
+            <div class="boxContainer" style="height: 500px;">
+                <div>
+                <h2>Contato</h2>
+                <form action="/Home/Cadastrar" method="POST" style="margin: 30px;">
+                    <div class="mb-3">
+                        <label asp-for="Nome" class="form-label">Nome:</label>
+                        <input asp-for="Nome" class="form-control" />
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="Email" class="form-label">Email:</label>
+                        <input asp-for="Email" class="form-control" />
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="Numero" class="form-label">Numero:</label>
+                        <input asp-for="Numero" class="form-control" />
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="Mensagem" class="form-label">Mensagem (opcional):</label>
+                        <textarea id="msg" asp-for="Mensagem" class="form-control"></textarea>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <input style="width: 200px;" type="submit" class="btn btn-warning" value="Enviar" />
+                    </div>
+                    <p>@ViewData["Cadastrado"]</p>
+                </form> 
+                </div>
+            </div> 
+        </div>
+        <div class="col-6 d-flex text-center align-items-center">
+            <div class="boxContainer" style="height: 375px;" onclick="mostrarmodal('modal3')">
+                <div style="margin: 30px;">
+                    <h3>Por que escolher nossa empresa?</h3>
+                    <p>Nossa empresa presa em manter a maior qualidade do nosso produto
+                        por um preço acessivel para todos. Por que ao invés de pagar sua 
+                        conta de luz mensalmente, você não começa a investir no seu futuro?
+                    </p>
+                </div>          
+            </div>    
+        </div>
+
+    @* MODAL 3 *@
+
+        
+
+    </div>
+    @* <div class="row mt-5 mb-5">
+        <div class="boxContainer">
+            <div class="text-center" style="margin: 30px;">
+                <h2>Por que energia solar?</h2>
+                <p class="texto">
+                A energia solar é uma opção ambientalmente amigável, reduzindo as emissões de gases de efeito estufa e preservando os recursos naturais. Além disso, ao optar pela energia solar, você pode economizar nas contas de energia, aproveitar incentivos governamentais e programas de financiamento. A valorização do imóvel e a independência energética também são benefícios notáveis. Os sistemas solares são duráveis, de baixa manutenção e oferecem uma fonte de energia confiável e estável. Faça a escolha inteligente para um futuro sustentável e descubra o potencial da energia solar em nosso site.
+                </p>
+            </div> 
+        </div>
+    </div> *@
+</div>
+
+<script>
+    function mostrarmodal(modal){
+        let el = document.getElementById(modal);
+        let modal1 = new bootstrap.Modal(el);
+        modal1.show();
+    }
+</script>
