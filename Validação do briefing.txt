@@ -1,0 +1,79 @@
+Qual tipo de projeto deseja?
+
+⦁	Site institucional 
+
+
+VALIDAÇÃO: O site foi trabalhdo no tipo institucional
+
+
+---------------------------------------------
+Objetivos do site:
+
+Conseguir o contado de pessoas interessadas
+
+
+
+VALIDAÇÃO: A página conta com um formulario para o cadastro das pessoas que o visitam
+
+
+
+---------------------------------------------
+Quais páginas/funcionalidades o site deverá ter?
+
+⦁	Home (página inicial)
+⦁	Institucional (“quem somos”/”missão”/”visão”) 
+⦁	Contato (“fale conosco”) 
+
+
+
+VALIDAÇÃO: O site conta com todas essas funcionalidades em uma unica página
+
+
+
+---------------------------------------------
+O site terá versões em outros idiomas?
+
+⦁	Português 
+
+
+
+VALIDAÇÃO: o site conta apenas com o idioma pedido, português
+
+
+
+----------------------------------------------
+Sugestões (utilizar as cores e o estilo):
+
+Cores amarelo e verde, um estilo simples mas não tão simples
+
+
+
+VALIDAÇÃO: as única cores utilizadas no projeto foram verde, amarelo e preto em um estilo simples
+
+
+
+----------------------------------------------
+Tecnologia desejada:
+
+⦁	Dinâmica animada (linguagens HTML com animações, PHP e banco de dados)
+
+
+
+VALIDAÇÃO: O site foi todo desenvolvido em HTML, CSS, JS e C#. contando com um banco de dados.
+
+
+
+----------------------------------------------
+Restrições:
+
+Não deve haver mais de uma página, todo o conteúdo deve ser aplicado na mesma página
+
+
+
+VALIDAÇÃO: O site todo e todas as suas funcionalidades se encontram apenas em uma única página. 
+
+
+
+----------------------------------------------
+
+

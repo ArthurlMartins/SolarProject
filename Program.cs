@@ -18,6 +18,12 @@ namespace SolarProject
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
+            .ConfigureLogging(logBuilder =>
+            {
+              logBuilder.ClearProviders(); //remove provedores de log anteriores
+              logBuilder.AddConsole();  
+              logBuilder.AddTraceSource("Information, ActivityTracing"); //adiciona provedor de trace listener
+            })
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();

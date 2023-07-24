@@ -1,0 +1,108 @@
+------RELATORIO DE TESTES------
+
+
+TESTES DE CAIXA BRANCA
+
+----ERRO 001 (resolvida)
+
+TITULO - formulario nao cadastrando email
+
+DESCRIÇÃO - ao clicar enviar, o email do usuario nao é enviado para o banco de dados
+
+GRAVIDADE - grande 
+
+RESOLUÇÃO - adicionar "asp-for="Email" no input do formulario
+-------------------------------------------------------------------
+
+----ERRO 002 (resolvida)
+
+TITULO - link privacy não funcionando
+
+DESCRIÇÃO - o codigo: "&copy; 2023 - SolarProject - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>" é inutil ja que não existe uma view Privacy
+
+GRAVIDADE - pequena
+
+RESOLUÇÃO - retirar ou substituir o código acima na view layout
+-----------------------------------------------------------------
+
+----ERRO 003 (resolvida)
+
+TITULO - falta do sitema de log
+
+DESCRIÇÃO - não utiliza-se logs no sitema
+
+GRAVIDADE - pequena
+
+RESOLUÇÃO - adicionar try and catch na funçao cadastrar no homecontroller
+-------------------------------------------------------------------
+
+----ERRO 004 (resolvida)
+
+TITULO - 
+
+DESCRIÇÃO - 
+
+GRAVIDADE - 
+
+RESOLUÇÃO - 
+
+---------------------------------------------------------------------------------------------------------------
+
+
+TESTES DE CAIXA PRETA
+
+----ERRO 001 (resolvida)
+
+TITULO - erro ao ampliar textarea
+
+DESCRIÇÃO - é possivel ampliar sem limites textarea na parte de contato
+
+GRAVIDADE - pequena
+
+RESOLUÇÃO - adicionar "height: 75px;  resize: none;" no css do textarea
+ ---------------------------------------------------------------------------------
+
+----ERRO 002 (resolvida)
+
+TITULO - imagem duplicada 
+
+DESCRIÇÃO - utilza-se da mesma imagem em dois dialog diferentes
+
+GRAVIDADE - minima
+
+RESOLUÇÃO - mudar o src de uma das imagens
+-------------------------------------------------------------------------------
+
+----ERRO 003 (resolvida)
+
+TITULO - o rodapé não está de acordo com o resto da página
+
+DESCRIÇÃO - o conteúdo do rodapé não está de acordo com o nome da empresa, e o link privacy não funciona
+
+GRAVIDADE - pequena
+
+RESOLUÇÃO - mudar o conteúdo do footer na view "layout"
+----------------------------------------------------------------------------------
+
+----ERRO 004 (resolvida)
+
+TITULO - palavra incorreta
+
+DESCRIÇÃO - a palavra "acessível" na primeria caixa de texto está escrita sem acento 
+
+GRAVIDADE - minima
+
+RESOLUÇÃO - mudar a ortografia da palavra no HTML
+
+
+
+ERRO 003 (resolvida)
+
+TITULO - 
+
+DESCRIÇÃO - 
+
+GRAVIDADE - 
+
+RESOLUÇÃO - 
+ 

@@ -26,7 +26,16 @@ namespace SolarProject.Controllers
         public IActionResult Cadastrar(Interesse i)
         {
             InteresseService iservice = new InteresseService();
-            iservice.CadastraInteresse(i); 
+            try
+            {
+                iservice.CadastraInteresse(i); 
+                return View("Index", i);
+            }
+            catch(Exception e)
+            {
+                _logger.LogError("Falha ao cadastrar: " +e.Message);
+                Console.WriteLine("Falha ao cadastrar: " +e.Message);
+            }
             return View("Index", i);
         }
     }

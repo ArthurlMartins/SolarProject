@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Logging;
+using Newtonsoft.Json.Linq;
+using System;
+using System.IO;
 
 namespace SolarProject.Models
 {
@@ -7,10 +9,12 @@ namespace SolarProject.Models
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {                   
-            optionsBuilder.UseMySql("Server=localhost;DataBase=Solar;Uid=root;");
+           JToken jAppSettings = JToken.Parse(File.ReadAllText(Path.Combine(Environment.CurrentDirectory, "appsettings.json")));
+
+           optionsBuilder.UseSqlServer(jAppSettings["ConnectionStrings"]["DefaultConnection"].ToString());
         }
 
         public DbSet<Interesse> Interesses { get; set; }
 
     }
-}
+} 
